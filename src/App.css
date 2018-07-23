@@ -1,0 +1,27 @@
+
+
+.app-main {
+  width: 720px;
+  height: 480px;
+  background: #000000;
+  color: rgba(255, 255, 255, 0.9);
+  font-family: 'Consolas'
+}
+
+nav {
+  height: 80px;
+}
+
+main {
+  height: calc(100% - 80px);
+  text-align: center;
+  position: relative;
+}
+
+main div.clock {
+  position: absolute;
+  top: 80px;
+  left: 0;
+  width: 100%;
+  font-size: 140px;
+}
