@@ -1,0 +1,2 @@
+body{margin:0;padding:0;font-family:sans-serif}.app-main{width:720px;height:480px;background:#000;color:hsla(0,0%,100%,.9);font-family:Consolas}nav{height:80px}main{height:calc(100% - 80px);text-align:center;position:relative}main div.clock{position:absolute;top:80px;left:0;width:100%;font-size:140px}
+/*# sourceMappingURL=main.d8af8e11.css.map*/
