@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import 'whatwg-fetch';
 
-const TEN_MINUTES = 10*60*1000;
-const API_URL = "https://www.yr.no/sted/Norge/Oslo/Oslo/Haslevangen/varsel.xml";
+// const TEN_MINUTES = 10*60*1000;
+// const API_URL = "https://www.yr.no/sted/Norge/Oslo/Oslo/Haslevangen/varsel.xml";
 // const xmlData = import ''
 class Weather extends Component {
 
