@@ -4,6 +4,7 @@ import './App.css';
 import { Swipeable } from 'react-touch';
 
 import Clock from './components/clock';
+import AnalogClock from './components/clock/analog';
 // import Weather from './components/weather';
 import Ruter from './components/ruter';
 
@@ -13,6 +14,7 @@ class App extends Component {
     moduleIdx: 0,
     modules: [
       <Clock style={{color: 'white', fontSize: '160px', lineHeight: '100%', position: 'absolute', bottom: 0, right: '10px'}}/>,   
+      <AnalogClock />,
       <Ruter />,
       // <Weather />
     ],

@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import 'whatwg-fetch';
-import moment from 'moment';
 
 import Clock from '../clock';
 import { ruterAPI } from '../../api';
