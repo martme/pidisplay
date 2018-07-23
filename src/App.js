@@ -13,8 +13,8 @@ class App extends Component {
   state = {
     moduleIdx: 0,
     modules: [
-      <Clock style={{color: 'white', fontSize: '160px', lineHeight: '100%', position: 'absolute', bottom: 0, right: '10px'}}/>,   
       <AnalogClock />,
+      <Clock style={{color: 'white', fontSize: '160px', lineHeight: '100%', position: 'absolute', bottom: 0, right: '10px'}}/>,   
       <Ruter />,
       // <Weather />
     ],
