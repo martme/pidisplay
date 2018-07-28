@@ -1,21 +1,15 @@
 import React, { Component } from 'react';
-import './App.css';
-
-import { Swipeable } from 'react-touch';
-
-import Clock from './components/clock';
-import AnalogClock from './components/clock/analog';
+import { DigitalClockPage, AnalogClockPage, RuterPage } from './pages';
 // import Weather from './components/weather';
-import Ruter from './components/ruter';
+// import Ruter from './components/ruter';
 
 class App extends Component {
-
   state = {
     moduleIdx: 0,
     modules: [
-      <AnalogClock />,
-      <Clock style={{color: 'white', fontSize: '160px', lineHeight: '100%', position: 'absolute', bottom: 0, right: '10px'}}/>,   
-      <Ruter />,
+      <DigitalClockPage />,
+      <AnalogClockPage />,
+      <RuterPage />,
       // <Weather />
     ],
   }
@@ -25,21 +19,13 @@ class App extends Component {
     const swipeLeft = () => {
       this.setState({moduleIdx: mod(1 + this.state.moduleIdx, this.state.modules.length)});
     }
-    const swipeRight = () => {
-      this.setState({moduleIdx: mod(1 - this.state.moduleIdx, this.state.modules.length)});
-    }
 
     return (
-      <div className="app-main">
-        <nav></nav>
-        <main style={{width: '100%', height: '100%', position: 'relative'}}>
-          <Swipeable onSwipeLeft={swipeLeft} onSwipeRight={swipeRight}>
-            <div style={{userSelect:'none', width: '100%', height: '100%'}}>
-              {this.state.modules[this.state.moduleIdx]}
-            </div>
-          </Swipeable>
-        </main>
-      </div>
+      <main className="app-main">
+        <div onClick={swipeLeft} style={{userSelect:'none', width: '100%', height: '100%'}}>
+          {this.state.modules[this.state.moduleIdx]}
+        </div>
+      </main>
     );
   }
 }
