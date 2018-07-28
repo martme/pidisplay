@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css?family=Anonymous+Pro');
+body {
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  
+  background: #000000;
+  color: rgba(255, 255, 255, 0.9);
+  font-family: 'Anonymous Pro', monospace;
+}
+
+.app-main {
+  width: 100vw;
+  height: 100vh;
+}
+
+.page {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  cursor: none !important;
+}
