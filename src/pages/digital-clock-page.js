@@ -6,7 +6,7 @@ class DigitalClockPage extends Component {
   
   render() {
     const style = {
-      fontSize: 'calc(100vmin / 5)',
+      fontSize: 'calc(100vmin / 3)',
       position: 'absolute',
       bottom: '0.2em',
       right: '0.2em',
